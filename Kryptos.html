@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kryptos-Encriptador de textos</title>
+  <link rel="stylesheet" href="kryptoStyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quattrocento&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">
+      <img src="imagenes encriptador/Kryptos.jpg" alt="Logo de empresa" />
+    </h1>
+  </header>
+
+  <section class="ingreseTexto">
+    <h2 class="accion-principal">Ingrese el texto aquí</h2>
+  </section>
+
+
+  <div class="contenedor-texto">
+    <div id="resultadoEncriptado"></div>
+    <textarea id="textoOriginal" name="textoOriginal" placeholder="....  " class="textarea"></textarea>
+  </div>
+
+
+  <div class="botones-container">
+    <button id="encriptar">Encriptar</button>
+    <button id="desencriptar">Desencriptar</button>
+    <div id="resultadoContenedor" class="contenedor">
+      <div class="descripcion">
+        <p id="resultado"></p>
+        <img id="imagen" class="muñeco" src="imagenes encriptador/Muñeco.png" alt="Muñeco buscando con una lupa" />
+        <p id="p1" class="m1">Ningún mensaje fue encontrado</p>
+        <p id="p2" class="m2">
+          Ingrese el texto que desee encriptar o desencriptar
+        </p>
+        <div class="boton-Copiar">
+          <button style="display: none" id="copiarTexto">Copiar Texto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="kryptos.js" defer></script>
+</body>
+
+</html>
